@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>주문 확인</title>
+</head>
+<body>
+    <h1>주문 확인</h1>
+    <p>{{ order }} 주문이 완료되었습니다.</p>
+    <!-- 2초 후에 다시 주문 페이지로 리디렉션 -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "/";
+        }, 2000);
+    </script>
+</body>
+</html>

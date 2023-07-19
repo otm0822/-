@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>주문 정보 확인</title>
+</head>
+<body>
+    <h1>주문 정보 확인</h1>
+    <ul>
+        {% for order in orders %}
+        <li>{{ loop.index }}. {{ order }} <button onclick="completeOrder({{ loop.index }})">완료</button></li>
+        {% endfor %}
+    </ul>
+
+    <script>
+        // ... 완료 버튼 관련 코드는 그대로 두세요 ...
+    </script>
+</body>
+</html>

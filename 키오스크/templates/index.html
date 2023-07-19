@@ -1,0 +1,18 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>주문하기</title>
+    </head>
+    <body>
+        <h1>음료 및 빙수 선택</h1>
+        <form method="post">
+            <select name="product">
+                {% for product in products %}
+                <option value="{{ product }}">{{ product }}</option>
+                {% endfor %}
+            </select>
+            <input type="number" name="count" min="1" max="5" placeholder="개수 (1~5)" required>
+            <button type="submit">주문하기</button>
+        </form>
+    </body>
+    </html>
